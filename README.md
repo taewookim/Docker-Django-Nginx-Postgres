@@ -10,19 +10,19 @@ This **Image/Dockerfile** aims to create a container for **Django** with **Postg
 You can build this **Dockerfile** yourself:
 
 ```
-sudo docker build -t "chenjr0719/django-nginx-postgres" .
+sudo docker build -t "taewookim/django-nginx-postgres" .
 ```
 
 Or, just pull my **image**:
 
 ```
-sudo docker pull chenjr0719/django-nginx-postgres
+sudo docker pull taewookim/django-nginx-postgres
 ```
 
 Then, run this image:
 
 ```
-sudo docker run -itd -p 80:80 chenjr0719/django-nginx-postgres
+sudo docker run -itd -p 80:80 taewookim/django-nginx-postgres
 ```
 
 Wait a minute, you can see the initial project of **Django** at http://127.0.0.1
@@ -47,7 +47,7 @@ You can check is **Django** work properly with **PostgreSQL Server** by:
 If you want to use your **Django** project which you already developed, use following command:
 
 ```
-sudo docker run -itd -p 80:80 -v $PROJECET_DIR:/home/django/website chenjr0719/django-nginx-postgres
+sudo docker run -itd -p 80:80 -v $PROJECET_DIR:/home/django/website taewookim/django-nginx-postgres
 ```
 
 ### Project requirements
